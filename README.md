@@ -231,21 +231,19 @@ La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j
 
 #####4.1 Restricciones
 
-<math>
 
-\oint_C x^3\, dx + 4y^2\, dy
+<math>\alpha</math>
 
-2 = \left(
- \frac{\left(3-x\right) \times 2}{3-x}
- \right)
+{{math|<VAR>&alpha;</VAR>}}
 
-\sum_{m=1}^\infty\sum_{n=1}^\infty\frac{m^2\,n}
- {3^m\left(m\,3^n+n\,3^m\right)}
- 
-\phi_n(\kappa) =
- \frac{1}{4\pi^2\kappa^2} \int_0^\infty
- \frac{\sin(\kappa R)}{\kappa R}
- \frac{\partial}{\partial R}
- \left[R^2\frac{\partial D_n(R)}{\partial R}\right]\,dR
+&Omega
 
-</math>
+{{math|''i''}}
+
+<math>x</math>
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cbig%28a%5Cbig%29%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \big(a\big) " width="31" height="21" />
+
+ \big(a\big) 
+
+ ![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29%0D%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
