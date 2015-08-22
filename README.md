@@ -65,8 +65,14 @@ De los ahorros reportados por la JUNAEB, 60% surgen debido a una mayor transpare
 
 Esta aplicación ha estimulado el interés en otros países en desarrollo que se enfrentan a muy similares problemas. Organización para la Agricultura y la Alimentación de las Naciones Unidas considera que la una JUNAEB es ejemplo internacional de la buena gestión y la eficiencia. El gobierno chileno considera JUNAEB excelente. Por otra parte, la empresa de tecnología de ILOG, propietario de la optimización CPLEX software, está dando a conocer esta experiencia como un caso de éxito y ejemplo para otras subastas combinatorias.
 
-    Sección 2: se revisa el estado del arte de las subastas combinatorias, la evaluación de las principales aplicaciones. 
-    Sección 3: proporciona una descripción detallada del proceso de subasta. 
-    Sección 4: formular y analizar el modelo de programación matemática. 
-    Sección 5: proporcionamos los detalles de implementación.
-    Sección 6: ofrece resultados y conclusiones. Finalmente, la sección 7 muestra cómo este el trabajo está relacionado con la OR en el desarrollo. 
+**Sección 2**: se revisa el estado del arte de las subastas combinatorias, la evaluación de las principales aplicaciones.
+
+**Sección 3**: proporciona una descripción detallada del proceso de subasta. 
+
+**Sección 4**: formular y analizar el modelo de programación matemática. 
+
+**Sección 5**: proporcionamos los detalles de implementación.
+
+**Sección 6**: ofrece resultados y conclusiones. 
+
+**Sección 7**: muestra cómo este el trabajo está relacionado con la OR en el desarrollo. 
