@@ -76,3 +76,15 @@ Esta aplicación ha estimulado el interés en otros países en desarrollo que se
 **Sección 6**: ofrece resultados y conclusiones. 
 
 **Sección 7**: muestra cómo este el trabajo está relacionado con la OR en el desarrollo. 
+
+####2 Revisión Bibliográfica
+
+En las denominadas subastas "combinatorias", se alienta a los postores presentar ofertas para distintos combinaciones de productos, que se aprovechan de su naturaleza complementaria (por ejemplo, los derechos a una sola frecuencia de transmisión para las regiones geográficas vecinas) o sustitución (por ejemplo, los derechos de diferentes frecuencias de transmisión en una sola región geográfica) para diferentes productos, o
+las economías de escala (por ejemplo, descuentos por volumen, la proximidad geográfica, la eficiencia del transporte). Este tipo de subasta generalmente surge cuando cada recurso es solo una parte de una solución posible y sólo paquetes de productos tienen un valor real. Ahora revisamos las aplicaciones reportadas en la literatura.
+
+Subastas combinatorias han sido de creciente interés en la literatura en los últimos 10 años ya que la subasta de espectro realizada por la FCC de los Estados Unidos (McMillan, 1994). Publicaciones realizado por Vickrey (1961) en los años 1960 y Jackson (1976), en la década de 1970, para la adjudicación de la radio derechos de frecuencia, son trabajos pioneros en la zona.
+
+A pesar de las ventajas técnicas de subastas combinatorias, como Kelly y Steinberg (2000) Punto en la práctica vemos pocas aplicaciones de este tipo. Los principales problemas de implementación surgen de la complejidad de la administración de subastas combinatorias. Los postores tienen que evaluar la oferta de combinaciones con enorme precisión para aprovechar al máximo las sinergias y economías de escala. En segundo lugar, hay un gran universo de ofertas que las empresas pueden hacer para subconjuntos de bienes a subasta, y esto aumenta el tamaño del problema de manera exponencial. Típicamente, el problema resultante es, en teoría, NP-duro y en la práctica resulta difícil de resolver.
+
+Andersson et al. (2000) comparan los resultados de la heurística de adjudicación recientes y tradicional heurística. También comparan estos resultados con los de un programación entera mixta. En un estudio similar, Fujishima et al. (1999) comparan la programación matemática que garantice una solución óptima con un método heurístico basado en el mercado. Nisán (2000) 
+######*Pag5*
