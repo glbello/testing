@@ -115,3 +115,7 @@ vasos de vidrio en lugar de plástico.
 El proceso de subasta implica seis pasos principales que se deben seguir estrictamente en términos de orden y de temporización. El primero es el registro de las empresas, seguido de su clasificación. Empresas próxima someten sus ofertas, incluyendo un proyecto técnico y las ofertas financieras. El proceso termina con la asignación de la 
 
 ######*Pag6*
+
+![01](01.jpg)
+
+![Markdown Plus](icon.png)
