@@ -117,5 +117,49 @@ El proceso de subasta implica seis pasos principales que se deben seguir estrict
 ######*Pag6*
 
 ![01](01.jpg)
+*Ver las otras imagenes en el paper*
 
-![Markdown Plus](icon.png)
+---
+
+ganar licitaciones, utilizando el modelo matemático para evaluar diferentes escenarios. En la Fig. 2, se presenta un cuadro cronológico de las principales actividades en este nuevo proceso de subasta. Describimos los primeros cinco pasos de esta sección.
+
+#####3.1 Inscripción de empresas
+
+El proceso comienza con una convocatoria de manifestaciones de interés y el registro de las empresas interesadas. JUNAEB luego evalúa las partes interesadas de un directivo, técnico, legal y los puntos de vista financieros, elimina aquellos que no cumplan las normas mínimas, y evalúa las capacidades de los restantes.
+
+#####3.2 Clasificación de las empresas
+
+Las empresas que califican como fiable se clasifican de acuerdo a dos aspectos: 
+
+######*Pag7*
+
+- Capacidad operativa y financiera: las empresas se clasifican en una de las cinco categorías, según el número máximo de unidades de formación que sería capaz de servir, en cualquier lugar entre uno y ocho TU.
+
+- JUNAEB también evalúa el rendimiento pasado de las empresas que prestan servicios de alimentación. Los resultado es un índice de desempeño en base a múltiples factores, como las encuestas de los niños, infraestructura de almacén, la cadena de frío, y otros. Este índice de rendimiento se utiliza en el modelo de optimización de la función objetivo; lo que las empresas consideran que es muy importante. Esta evaluación está sujeta a reglas preestablecidas y existe un procedimiento de apelación si la empresa no está de acuerdo con su evaluación.
+
+#####3.3 La presentación de las oferta
+
+Después de esto, una convocatoria pública de concurso se hace y se ponen las reglas básicas para el proceso de licitación en venta. Los concesionarios potenciales (actualmente en numeración unos 35) presentan sus ofertas en formato electrónico o en CD. Esto facilita las comunicaciones de la empresa y de entrada de datos para el modelo de asignación. Cada CD recibe un código y clave de código el nombre del postor se deposita con un notario; así que los evaluadores no saben quién es el ganador hasta que se adjudique el contrato. Cada empresa
+presenta un proyecto técnico para el servicio de comidas y diferentes ofertas económicas.
+
+#####3.4 Proyecto técnico
+
+El proyecto técnico se basa en requisitos claramente establecidos por la JUNAEB, que incluyen:
+
+- Requerimientos nutricionales: Diferentes comidas deben cumplir con sus respectivas especificaciones nutricionales.
+
+- Estructura de la Alimentación: Especifica el tipo de servicio (almuerzo, desayuno, etc.) y la frecuencia (o presencia mínimo y máximo) de ciertos alimentos, y siempre la variedad de comidas en el mínimo requerido.
+
+- Entradas: Especifica las características mínimas de calidad.
+
+- Condiciones de funcionamiento: la higiene Especifica, suministros, manejo de alimentos, supervisión, etc.
+
+- Infraestructura: Especifica mobiliario, equipo y vajilla, etc.La JUNAEB evalúa si cada empresa cumpla con los requisitos. Las empresas que cumplan estos requisitos permanecen en el proceso de licitación, pasando a competir sobre la base del precio y rendimiento, a través de sus respectivas ofertas económicas.
+
+#####3.5 Las ofertas económicas
+
+Cada oferta financiera presentada por una empresa, especifica la cobertura de uno a ocho unidades de formación, dependiendo del límite superior permitido por la clasificación de la empresa. Como se ha mencionado, las empresas pueden presentar todas las ofertas que deseen.
+
+Las empresas pueden elevar el precio por unidad si la demanda durante la ejecución del contrato es inferior al proyectado por la JUNAEB, que afecta a la estructura de costos de los servicios fijos y variables. La subasta incluye precios de cuatro tramos de la demanda. El primero se proyecta la demanda; la segunda opera si la demanda es 
+
+######*Pag8*
