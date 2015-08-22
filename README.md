@@ -88,3 +88,30 @@ A pesar de las ventajas técnicas de subastas combinatorias, como Kelly y Steinb
 
 Andersson et al. (2000) comparan los resultados de la heurística de adjudicación recientes y tradicional heurística. También comparan estos resultados con los de un programación entera mixta. En un estudio similar, Fujishima et al. (1999) comparan la programación matemática que garantice una solución óptima con un método heurístico basado en el mercado. Nisán (2000) 
 ######*Pag5*
+
+estudia el problema de la representación de la función de oferta. El autor ha formalizado múltiples lenguajes de representación y análisis de fortalezas y debilidades.
+
+Baird (1984) describe una subasta que intenta reducir los niveles de capturas de peces cuando las ofertas participantes actuales correspondientes al precio al que estarían dispuestos a mantener
+sus niveles de captura. Brewer y Plott (1996) estudian la aplicación de las subastas de tipo combinatorio de la adjudicación de los segmentos de línea ferroviaria. Letchford (1996) describe una subasta para contratar operadores del autobús escolar, lo que permite descuentos para  una oferta en más de un contrato. En este caso, la instancia era relativamente pequeña: 201 individuales y tres ofertas de grupo.
+
+Los avances en los algoritmos combinatorios y la capacidad de procesamiento de la computadora ha contribuido al renacimiento de subastas combinatorias. La firma de consultoría, Saitech-INC, ofrece un software llamado SBIDS para la subasta de los paquetes de rutas entre las empresas de transporte. El sistema OptiBidt, desde Logistics.com, se ha utilizado para las subastas de contratos de transporte para empresas incluyendo Ford, Wal-Mart y K-Mart, por un valor de US $ 5 millones a través de enero de 2000 (Vries y Vohra, de próxima publicación). Por lo que sabemos, no hay muchos más problemas del mundo real, donde una subasta combinacional ha sido utilizado con éxito.
+
+En nuestro caso, se anima a las empresas participantes en la subasta JUNAEB para presentar ofertas para conjuntos de unidades de formación, para aprovechar las economías de escala. Si las empresas JUNAEB han requerido presentar ofertas separadas para cada TU, correrían el riesgo de "exposición" (Rothkopf et al., 1997).
+
+Si ofrecen un precio barato para cada TU individual, pensando que van a adjudicar todo el conjunto, pueden perder dinero si se juzgan sólo uno. Sin embargo, si ofrecen precios más altos para cada TU, consistente con la adjudicación de una sola, sus posibilidades de ganar varias ofertas disminuyen.
+
+####3 El proceso de subasta
+
+El sistema educativo de Chile se compone de más de 14.000 escuelas agrupadas en 90 unidades de formación, que convertierten una caída menor de 13 regiones administrativas del país (ver Fig. 1). Cada año, la JUNAEB,
+Subasta JUNJI e INTEGRA los servicios de alimentación para 30 unidades de formación para el período de 3 años.
+
+El programa de comidas escolares JUNAEB está dividido en cinco subprogramas: la educación preescolar, educación primaria, educación secundaria, las vacaciones y los hogares. Los programas de educación pre-escolar y primaria son obligatorios. La educación preescolar tiene una duración de 2 años, la educación primaria 8, y secundaria JUNJI 4. La educación tiene un subprograma para las comidas en los centros de atención infantil, mientras que INTEGRA tiene un subprograma para las comidas en los centros de atención infantil.
+
+Cada subprograma incluye comidas diferentes, con diferentes contenidos nutricionales y calóricas. Por ejemplo, el subprograma de secundaria implica proporcionar cuatro tipos de raciones, la RM-350 (desayuno, 350cal), la RM-650 (almuerzo, 650cal), la RM-800 (almuerzo, 800cal) y la RM-1000 (cena, 1000cal). Cada TU tiene demanda de cada tipo de ración en cada subprograma durante el período de subasta.
+
+Las empresas también ofrecer servicios "extra", que pueden ser incluidos con los productos habituales para el Programas JUNAEB. Ejemplos de estos servicios son las verduras más frecuentes, bandejas de acero y
+vasos de vidrio en lugar de plástico.
+
+El proceso de subasta implica seis pasos principales que se deben seguir estrictamente en términos de orden y de temporización. El primero es el registro de las empresas, seguido de su clasificación. Empresas próxima someten sus ofertas, incluyendo un proyecto técnico y las ofertas financieras. El proceso termina con la asignación de la 
+
+######*Pag6*
