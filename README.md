@@ -117,6 +117,7 @@ El proceso de subasta implica seis pasos principales que se deben seguir estrict
 ######*Pag6*
 
 ![01](01.jpg)
+
 *Ver las otras imagenes en el paper*
 
 ---
@@ -163,3 +164,70 @@ Cada oferta financiera presentada por una empresa, especifica la cobertura de un
 Las empresas pueden elevar el precio por unidad si la demanda durante la ejecución del contrato es inferior al proyectado por la JUNAEB, que afecta a la estructura de costos de los servicios fijos y variables. La subasta incluye precios de cuatro tramos de la demanda. El primero se proyecta la demanda; la segunda opera si la demanda es 
 
 ######*Pag8*
+
+80% de las proyecciones; el tercero entra en vigor si la demanda es el 60% de las proyecciones. El cuarto viene en efecto, si la demanda es superior a 4% las proyecciones anteriores. El segundo y el tercer tramo incluyen recargos sobre la tarifa de la unidad, mientras que el cuarto tramo implica un descuento. Los cambios en la demanda puede ocurrir debido a los desastres naturales, huelgas u otros eventos impredecibles. Este sistema de precios diferenciales significa que las empresas no tienen que asumir riesgos que no tienen nada que ver con su gestión.
+
+Si se consideran los diferentes programas, raciones, las estructuras y los tramos, podemos ver que una oferta podría incluir alrededor de 200 precios diferentes. La oferta es aceptada o rechazada en su conjunto. Si la
+oferta es aceptada, la JUNAEB puede especificar los productos y servicios contratados, de los incluidos en la oferta, de forma dinámica durante la duración de 3 años del contrato. La aceptación de la oferta de una empresa requiere que la empresa proporcione todos los servicios de comidas a las TU correspondiente.
+
+Teniendo en cuenta los diferentes servicios que ofrecen, hay 30 tipos de comida, cada uno definido por las calorías para ser proporcionado y requerimientos nutricionales detallados. Por ejemplo, B350 comida es un desayuno de 350 calorías por niños de la escuela primaria, mientras M1000 comida es una comida de 1000 calorías para los niños de la escuela secundaria. Por cada uno, los nutricionistas han determinado tres estructuras de alimentos utilizando diferentes combinaciones de alimentos posibles para cumplir con el número requerido de calorías. Estas estructuras de alimentos varían en calidad, permitiendo de ese modo
+JUNAEB fijar el precio de una variedad de productos, algunos de los cuales son mejores que otros. Por ejemplo, para una Estructura del almuerzo 650-cal especifica la carne (carne de res, pollo, pavo, cerdo o cordero en diferentes formas) diez veces al mes, mientras que otro especifica carne de 14 veces al mes. De este modo, cada producto consta de comida totalmente definido por el equipo de nutrición JUNAEB, que establece el número de calorías, requerimientos nutricionales y la frecuencia de los alimentos requeridos.
+
+Para evaluar cada oferta, se consideraron los diferentes escenarios que pueden afectar el contrato aplicación, en particular los tramos de la demanda y de las estructuras de los alimentos. Cada TU ha proyectado la demanda de los diferentes tipos de raciones de cada subprograma. Por lo tanto, el número de raciones y su valor unitario depende de la demanda y la estructura de los alimentos que elegimos para el escenario. Una vez que se definen estas variables podemos evaluar, una oferta mediante el cálculo del precio unitario para cada servicio y multiplicándolo por la demanda de ese escenario en las ofertas que incluyen en la UT. La suma de estos valores corresponden al valor de la oferta en ese escenario.
+
+Una vez que se han evaluado las ofertas, se inicia el proceso de adjudicación. La selección de ganar ofrece el hecho por un comité de adjudicación formado por los ministerios de finanzas, salud,
+la educación y los principales ejecutivos dentro de la JUNAEB.
+
+####4 Análisis combinatorio y el modelo 
+
+La concesión tiene una duración de 3 años y puede hacer frente a diferentes escenarios. La metodología para la asignación de contratos consiste en elegir soluciones robustas, es decir, aquellos que no sólo satisfacen la técnica y restricciones financieras, sino que también se encuentran entre los mejores de todos o en la mayoría de los escenarios que pueden ocurrir durante este período. Los factores que definen diferentes escenarios son los siguientes:
+
+1.  Función objetivo:  Podemos optimizar considerando sólo los costes y desempeño para la JUNAEB, o teniendo en cuenta los parámetros de las tres instituciones: JUNAEB, JUNJI e INTEGRA (dos opciones). 
+
+######*Pag9*
+
+2. El desempeño de la empresa. Podemos minimizar los costos de subastas u optimizar una función mixta que también incluye el índice de rendimiento de la empresa (dos opciones).
+
+3. La estructura de la Alimentación. Optimizamos las diferentes estructuras de los alimentos, para examinar la viabilidad financiera de
+mejorar el servicio. Por otra parte, consideramos las diferentes combinaciones de servicios adicionales, por ejemplo, más frutas y hortalizas (siete opciones).
+
+4. La demanda tramos. Para evaluar la robustez de una solución, debemos tener en cuenta la demanda a tramos que podrían afectar el funcionamiento del contrato por 3 años (cuatro opciones).
+
+5. Las bandas de precios. Las ofertas que son demasiado barato pueden hacer que las empresas quiebran y es un serio problemas el reemplazar el servicio, como a menudo se ha producido. Debido a esto, la JUNAEB es
+inclinados a eliminar las ofertas más riesgosos, definiendo así dos opciones, una que implica la la participación de las ofertas demasiado baratas y el otro con su eliminación, a priori. A identificar las ofertas demasiado baratas, se utilizan estadísticas regionales.
+
+6. Límite de empresas por región. La JUNAEB considera apropiado que un número mínimo de las empresas que operen en una sola región, para asegurarse de que hay opciones cerca en caso de alguna empresa va a la quiebra. Tener demasiadas empresas por región no es una buena idea tampoco, porque la administración se hace más costoso de la JUNAEB. Debido a que la imposición de esta limitación implica un costo, los escenarios con y sin esta restricción se evalúan (dos
+opciones). 
+7. La dispersión de soluciones. Mantener a las empresas que trabajen para JUNAEB en el largo plazo y generar una mayor competencia entre las empresas, la junta prefiere emplear varias empresas. Para esto implica un costo, la optimización debe considerar las condiciones con y sin
+número mínimo dentro de los escenarios (dos opciones).
+
+Hemos considerado 500-700 escenarios en las subastas que evalúan, desde el máximo de 896 que aparecería con todas las combinaciones, dado que el comité consideró alguna improbable. Nosotros construimos un modelo de programación lineal entera para encontrar la solución óptima para cada escenario. Primero nosotros analizado las limitaciones y luego estudiamos la función objetivo.
+
+`$K$`: representa el conjunto de las empresas participantes en la subasta. 
+
+`$I$`: el conjunto de TUs para la subasta.
+
+`$J$`: el conjunto de las ofertas económicas.
+
+`$J_k$`: las ofertas de la empresa `$k$`
+
+`$J^i$`: las ofertas que incluye `$i$` TU
+
+`$J_{kr}$`: las ofertas de la empresa `$k$` que incluye algun TU en la región `$r$`
+
+Llamamos `$u_j$` el conjunto de TUs incluida en la oferta j.
+
+`$n^s_j$`: el número de raciones proporcionada por oferta `$j$` bajo contrato en el escenario `$s$`.
+
+`$c^s_j$`: costo de la oferta de `$j$` en el escenario `$s$`.
+
+Deje que `$cap(k)$` represente el número máximo de TUs en la cual empresa `$k$` puede obtener la concesión
+
+`$N^s$`: el número total de raciones incluido en la subasta dentro de escenario s.
+        
+Teniendo en cuenta que el número de raciones y el precio unitario dependen del escenario, llamará al presupuesto para el escenario s, el `$badge(s)$`. Para un conjunto `$A$`, su cardinalidad se denota por `$|A|$`. 
+
+La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j$` y 0 en caso contrario.
+
+#####4.1 Restricciones
+
