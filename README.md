@@ -232,7 +232,7 @@ La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j
 #####4.1 Restricciones
 
 <math>
-```math
+
 \oint_C x^3\, dx + 4y^2\, dy
 
 2 = \left(
@@ -247,5 +247,5 @@ La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j
  \frac{\sin(\kappa R)}{\kappa R}
  \frac{\partial}{\partial R}
  \left[R^2\frac{\partial D_n(R)}{\partial R}\right]\,dR
-```
+
 </math>
