@@ -231,19 +231,59 @@ La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j
 
 #####4.1 Restricciones
 
+---
 
-<math>\alpha</math>
+######*Pag13*
 
-{{math|<VAR>&alpha;</VAR>}}
+#### 5 Solución e implementación
 
-&Omega
+El proceso de evaluación de las ofertas y la adjudicación no puede tener más de una semana, por práctica y razones legales.
 
-{{math|''i''}}
+El análisis consiste en la evaluación de las ofertas de acuerdo con el escenario y después la búsqueda de la solución óptima para cada escenario. Es esencial hacer esto en no más de 24 horas, porque normalmente durante la semana se producen eventos inesperados y algunos parámetros de evaluación 
 
-<math>x</math>
+######*Pag14*
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cbig%28a%5Cbig%29%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \big(a\big) " width="31" height="21" />
+cambiar, como el presupuesto o el número de raciones. Si tenemos en cuenta 700 escenarios, vemos que el resolución para cada una debería tomar 2 minutos en promedio. El elemento fundamental es encontrar la óptima solución, teniendo en cuenta que las ofertas que evalúan. La preparación de informes y tablas de comparación están automatizados y muy rápido.
 
- \big(a\big) 
+Para resolver estos casos de manera eficiente, primero aplicamos un algoritmo simple, con un límite de tiempo de 1 min. Esta consiste en la resolución de la formulación compacta sin cortes adicionales. 
 
- ![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29%0D%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+Varios escenarios son resuelto en la primera etapa. Utilizamos CPLEX con el método branch-and-atado de resolver, en su versión diferente de acuerdo con el año de la subasta. 
+
+Para resolver los escenarios restantes, usamos una versión más sofisticada del método, añadiendo cubrir-camarilla desigualdades, también con un límite de tiempo (2 minutos). Para los escenarios que permanecen sin resolver hay que hacer que el algoritmo sea más sofisticado, usando la formulación extendida y una nueva hora límite (5min). En esta etapa, todos los escenarios pueden terminar resuelto o una pareja pueden permanecer en espera.
+
+Otra clave de esta estrategia es que es posible paralelizar el trabajo sobre varios diferentes computadoras. En algunas ocasiones, se ha trabajado en cuatro equipos al mismo tiempo. Los dos o tres casos más difíciles que con el tiempo se quedan sin resolver se tratan en persona más que en las computadoras. Hemos trabajado con una tolerancia de optimalidad de 0,01%, teniendo en cuenta los montos involucrados. Sin embargo, la asignación de una solución subóptima puede implicar enormes costos en términos del proceso imagen. Aunque la diferencia en la función objetivo está limitada a 0,01%, de la participación de las empresas en soluciones alternativas puede terminar muy diferente. Una empresa, por ejemplo, puede en el mejor de los casos adjudicar muchas raciones y en la solución aproximada ninguno o muy pocass. Esta sería inaceptable e injusta, dañando la credibilidad del proceso. Debido a esto, hemos
+resolver de optimalidad todos los escenarios con cualquier probabilidad de ser elegido. La evidencia empírica indica que lo mejor es comenzar con la formulación compacta porque su la relajación lineal se resuelve de modo mucho más rápido que la formulación extendida, aunque la solución de la formulación compacta tiende a ser más fraccionada. La formulación compacto es muy eficiente para resolver casos fáciles. Por otra parte, algunos 
+casos tomar más tiempo para resolver con el algoritmo sofisticado, mientras que el algoritmo simple puede resolverlo de inmediato. Bixby (2002) informa de resultados similares. 
+
+*Cuadrp ver en paper*
+
+######*Pag15*
+
+Una cuestión a considerar es cómo las computadoras y los programas de optimización han evolucionado, en nuestro caso CPLEX, de 1997 a 2002. En 1997, se utilizó CPLEX 2.2 y 3.0 en un 300-MHz PC Pentium II.
+En 2002, nos encontramos con CPLEX 8.0 en un 1.8-GHz Pentium 4 ordenador.
+
+Muchas de las técnicas que describimos para resolver el modelo en realidad se han incluido en la última versiones de CPLEX. En particular, (3d) las limitaciones, que son una extensión de (3c) limitaciones y cubrir las desigualdades. Las versiones anteriores de CPLEX llevan a cabo automáticamente algunos de ellos mejoras, pero muy ineficiente y que era mejor desactivar esta función del software para lograr mejores resultados. Bixby (2002) informa de experiencias similares cuando experimentó con 10
+casos aleatorios usando nuevas y viejas versiones CPLEX en una estación de 667MHz Alfa. Resolución de tiempos indicados en la Tabla 1 muestran claramente que los tiempos de solución han mejorado con la inclusión de
+técnicas similares a las que estamos informando. Como referencia, el problema más difícil en el
+2.002 subasta tomó 20 minutos para resolver usando CPLEX 8.0 y un procesador Pentium de 1.8 GHz 4. 
+
+*Ver Tabla en Paper*
+
+######*Pag16*
+
+*Ver Tabla en Paper*
+
+ La Figura 3 proporciona un ejemplo de cómo se informa sobre la solución óptima para un escenario dado. Los informe incluye los parámetros que definen el escenario, seguido de un informe de coste y de la respectivos déficits o superávits en los presupuestos de las tres instituciones. Por último, en los detalles aparecen los detalles de las ofertas aceptadas, lo que indica el costo de cada institución y las UT involucrados. Otras informaciónes útiles aparece es el número de empresas de cada región y la media aritmética del Índice de desempeño de las empresas por esta solución.
+ 
+Tabla 2 es muy útil ya que hace que sea posible examinar el comportamiento de la óptima solución para un escenario si lo aplicamos en otros escenarios relacionados. Cada línea indica los parámetros que definen el escenario, lo que nos referiremos como el escenario de referencia. Un escenario relacionado con los mismos parámetros que del escenario de referencia, pero para uno. A continuación, indica cómo esta solución óptima cambiaría si se aplica a un escenario relacionado. Por ejemplo, la línea de base incluye el servicio plus R1. Si cambiamos a un escenario relacionado que tenga en cuenta el servicio plus R2, la solución óptima de
+el escenario base sería 0.4% peor que el valor de la solución óptima de la relacionada escenario. De esta forma podemos evaluar la solidez de una solución está en diferentes escenarios.
+
+####6. Conclusiones
+
+Este método de adjudicación se ha utilizado desde 1997 hasta 2002, con la excepción de 1998, cuando no había ninguna subasta. Los resultados empíricos apuntan a una mejora significativa en este proceso donde la herramienta OR es fundamental para garantizar la competencia, la transparencia y la equidad.
+
+Este nuevo método de subasta superó la desconfianza inicial y hoy es aceptada y valorada por el JUNAEB y licitación las empresas, que ven un proceso transparente que les permita competir en igualdad.
+
+Desde la implantación de esta metodología, las presiones sobre el comité de adjudicación han sido 
+
+..continuará
