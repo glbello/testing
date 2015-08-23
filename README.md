@@ -115,6 +115,7 @@ vasos de vidrio en lugar de plástico.
 El proceso de subasta implica seis pasos principales que se deben seguir estrictamente en términos de orden y de temporización. El primero es el registro de las empresas, seguido de su clasificación. Empresas próxima someten sus ofertas, incluyendo un proyecto técnico y las ofertas financieras. El proceso termina con la asignación de la 
 
 ######*Pag6*
+---
 
 ![01](01.jpg)
 
@@ -161,7 +162,7 @@ El proyecto técnico se basa en requisitos claramente establecidos por la JUNAEB
 
 Cada oferta financiera presentada por una empresa, especifica la cobertura de uno a ocho unidades de formación, dependiendo del límite superior permitido por la clasificación de la empresa. Como se ha mencionado, las empresas pueden presentar todas las ofertas que deseen.
 
-Las empresas pueden elevar el precio por unidad si la demanda durante la ejecución del contrato es inferior al proyectado por la JUNAEB, que afecta a la estructura de costos de los servicios fijos y variables. La subasta incluye precios de cuatro tramos de la demanda. El primero se proyecta la demanda; la segunda opera si la demanda es 
+Las empresas pueden elevar el precio por unidad si la demanda durante la ejecución del contrato es inferior al proyectado por la JUNAEB, que afecta a la estructura de costos de los servicios fijos y variables. La subasta incluye precios de cuatro tramos de la demanda. El primero se proyecta la demanda; la segunda opera si la demanda es del
 
 ######*Pag8*
 
@@ -203,6 +204,7 @@ número mínimo dentro de los escenarios (dos opciones).
 
 Hemos considerado 500-700 escenarios en las subastas que evalúan, desde el máximo de 896 que aparecería con todas las combinaciones, dado que el comité consideró alguna improbable. Nosotros construimos un modelo de programación lineal entera para encontrar la solución óptima para cada escenario. Primero nosotros analizado las limitaciones y luego estudiamos la función objetivo.
 
+
 `$K$`: representa el conjunto de las empresas participantes en la subasta. 
 
 `$I$`: el conjunto de TUs para la subasta.
@@ -229,9 +231,10 @@ Teniendo en cuenta que el número de raciones y el precio unitario dependen del 
 
 La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j$` y 0 en caso contrario.
 
+
 #####4.1 Restricciones
 
----
+*Ver lo demás en el paper*
 
 ######*Pag13*
 
@@ -255,7 +258,7 @@ Otra clave de esta estrategia es que es posible paralelizar el trabajo sobre var
 resolver de optimalidad todos los escenarios con cualquier probabilidad de ser elegido. La evidencia empírica indica que lo mejor es comenzar con la formulación compacta porque su la relajación lineal se resuelve de modo mucho más rápido que la formulación extendida, aunque la solución de la formulación compacta tiende a ser más fraccionada. La formulación compacto es muy eficiente para resolver casos fáciles. Por otra parte, algunos 
 casos tomar más tiempo para resolver con el algoritmo sofisticado, mientras que el algoritmo simple puede resolverlo de inmediato. Bixby (2002) informa de resultados similares. 
 
-*Cuadrp ver en paper*
+-- *Cuadro ver en paper* -- 
 
 ######*Pag15*
 
@@ -267,11 +270,11 @@ casos aleatorios usando nuevas y viejas versiones CPLEX en una estación de 667M
 técnicas similares a las que estamos informando. Como referencia, el problema más difícil en el
 2.002 subasta tomó 20 minutos para resolver usando CPLEX 8.0 y un procesador Pentium de 1.8 GHz 4. 
 
-*Ver Tabla en Paper*
+-- *Ver Tabla en Paper* --
 
 ######*Pag16*
 
-*Ver Tabla en Paper*
+-- *Ver Tabla en Paper* --
 
  La Figura 3 proporciona un ejemplo de cómo se informa sobre la solución óptima para un escenario dado. Los informe incluye los parámetros que definen el escenario, seguido de un informe de coste y de la respectivos déficits o superávits en los presupuestos de las tres instituciones. Por último, en los detalles aparecen los detalles de las ofertas aceptadas, lo que indica el costo de cada institución y las UT involucrados. Otras informaciónes útiles aparece es el número de empresas de cada región y la media aritmética del Índice de desempeño de las empresas por esta solución.
  
@@ -286,4 +289,50 @@ Este nuevo método de subasta superó la desconfianza inicial y hoy es aceptada 
 
 Desde la implantación de esta metodología, las presiones sobre el comité de adjudicación han sido 
 
-..continuará
+######*Pag17*
+
+-- *Ver imagen en Paper* --
+
+eliminado. La evaluación es tan objetiva que las principales disputas entre las empresas y la JUNAEB se centran en aspectos tales como el índice de rendimiento de la empresa. Incluso algunas empresas de catering, que se opusieron inicialmente el sistema, han llegado a comprender sus beneficios y ahora apoyan el modelo.
+
+Como primer resultado, la JUNAEB informa un ahorro anual de unos US $ 40 millones, que han invertido en la mejora de la cobertura y calidad de la ración. Esta cantidad aparece comparada en 1995 y 1999, que involucró a las subastas para el mismo UT, bajo los métodos antiguos y nuevos (Epstein y Catalán, 1999, Epstein et al., 2002). Como ejemplo, la Fig. La figura 4 muestra los cambios en el precio para una ración 700-cal, el más típico dentro del sistema. 
+
+Por otra parte, ha permitido ampliar la cobertura del servicio, lo que hace una reducción de costos por partida significativa doble, debido a que las escuelas de nueva incorporación son los relacionados con el acceso más difícil y por lo tanto, mayores costos. La Figura 5 muestra las tendencias en el aumento de los presupuestos y la cobertura, en este efecto positivo es aparente.
+
+Calidad de los alimentos también ha mejorado significativamente. Ingredientes desayuno cambiaron de una porción de leche por semana en 1995 a la leche todos los días; de pan dos veces a la semana a tres veces; y se introdujeron cereales.
+
+######*Pag18*
+
+El almuerzo, la comida principal también mejoró de manera significativa, como es ampliamente reconocido por Ministerio de Salud y la Universidad de las autoridades. Ensaladas frescas aumentaron de cuatro a 14 cada 20 días,
+carne de cuatro porciones a siete, el pescado se mantuvo de la misma frecuencia, pero cambió de conservas al recién capturado. Frecuencia de fruta fresca resucitado de entre seis veces al mes a ocho veces al mes. Todo estas mejoras involucraron costes reales adicionales, pero estos eran más que compensado por el ahorro de una mayor eficiencia.
+
+Una cuestión clave se refiere a la percepción del servicio de los niños, ya que son los clientes reales. En una gama de aceptabilidad del uno al siete, donde uno es el peor y el siete la mejor calificación, las encuestas indican que las calificaciones fueron de entre 5,1 y 6,2 en 1997, entre 5,5 y 6,7 en el año 2000, y entre 6,0 y 6,7 en 2001, una clara señal de que las empresas han hecho un esfuerzo para mejorar su índices de rendimiento, una variable clave en su gestión y adjudicación de futuro
+contratos.
+
+También es importante analizar los cambios en las empresas de más de estos años. Mejorar productividad, que han invertido en infraestructura, incluyendo la cadena de frío, aire acondicionado, utensilios de acero inoxidable, nuevos utensilios de cocina, calentadores de agua y otros. Los empleados han visto su los salarios suben 45% durante este período. Aún más sorprendente, quizás, es que el rendimiento del capital que aumentó de 28% en 1995 al 38% en 1999. El rendimiento de las ventas aumentó de 3,2% a 4,9% en el mismo período. Asociamos estos efectos positivos con mayor productividad.
+
+La JUNAEB ha recibido un amplio reconocimiento entre las instituciones públicas por su óptima distribución de los recursos públicos entre los pobres. De hecho, el 91% de estos beneficios van directamente a los estudiantes que viven por debajo del umbral de pobreza.
+
+####7 OR en el desarrollo
+
+El objetivo de la OR en el desarrollo es para ilustrar cómo la comunidad participa activamente en la solución de problemas relevantes en los países en desarrollo, sobre todo lo que la gestión de lo público y las instituciones privadas más eficientes. Una gestión científica y eficaz de nuestras instituciones es nuestra manera de mejorar la calidad de vida de las personas.
+
+En países desarrollados como el nuestro, las familias de bajos ingresos que no son capaces de educar y alimentar a sus hijos adecuadamente. El papel del Estado es apoyar a estos niños a través de eficientes políticas sociales focalizadas. El programa de alimentación escolar es de crucial importancia, probablemente la más beneficiosa para los niños de la familia de bajos ingresos. Muchos padres envían a sus hijos a la escuela motivado por la calidad y cantidad de la comida que reciben en la escuela. Por lo tanto, el programa de comidas no sólo mejora la nutrición de estos niños, sino que también reduce el absentismo escolar. Sin embargo, recursos en los países en desarrollo son muy limitados, por lo que es vital para el estado para asignarlos de manera óptima. El dinero ahorrado de esta manera significa más y mejor nutrición para los niños pobres y también
+mejor educación. 
+
+En general, podemos decir que este sistema ofrece un muy buen ejemplo de cómo una aplicación o CAN mejora las políticas sociales. En este caso, el sistema mejoró tanto la competencia y la eficiencia, y con ellos ha impulsado significativamente la calidad sin aumentar los costos.
+
+Agradecemos IFORS y OR en el desarrollo para dar a los investigadores la oportunidad de aprender de valiosas experiencias de otros países, la adición de una gran cantidad de valor a nuestro trabajo. La visibilidad
+que esta aplicación ha tenido en nuestro país debido a OR en el desarrollo ha ayudado a la totalidad 
+
+######*Pag19*
+
+ Comunidad OR en Chile para ser mejor comprendida por los funcionarios públicos de las posibilidades que nuestro enfoque científico puede hacer.
+La JUNAEB y hoy el sistema nacional gozan de la confianza generalizada y apoyo. En una letra, entonces Ministro de Educación, Mariana Aylwin, escribió: "Los resultados de la aplicación de este sistema fueron dramáticos. El nuevo procedimiento cambió por completo el carácter de la proceso de subasta". La Organización para la Agricultura y la Alimentación está utilizando JUNAEB de Chile como un modelo para la escuela programas en otros países en desarrollo.
+
+La transparencia y la competencia son dos llaves maestras para el logro de una mejor productividad y más crecimiento económico. A medida que la experiencia revela JUNAEB, los beneficiarios de una mayor productividad son no simplemente un par de indicadores macroeconómicos abstractas, sino personas de carne y hueso. ¿Cómo muchos almuerzos gratis todavía permanecen ocultos dentro de otras operaciones de servicio público o empresa privada? 
+
+Fin
+
+
+
