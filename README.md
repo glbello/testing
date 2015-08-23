@@ -77,7 +77,7 @@ Esta aplicación ha estimulado el interés en otros países en desarrollo que se
 
 **Sección 7**: muestra cómo este el trabajo está relacionado con la OR en el desarrollo. 
 
-####2 Revisión Bibliográfica
+####2. Revisión Bibliográfica
 
 En las denominadas subastas "combinatorias", se alienta a los postores presentar ofertas para distintos combinaciones de productos, que se aprovechan de su naturaleza complementaria (por ejemplo, los derechos a una sola frecuencia de transmisión para las regiones geográficas vecinas) o sustitución (por ejemplo, los derechos de diferentes frecuencias de transmisión en una sola región geográfica) para diferentes productos, o
 las economías de escala (por ejemplo, descuentos por volumen, la proximidad geográfica, la eficiencia del transporte). Este tipo de subasta generalmente surge cuando cada recurso es solo una parte de una solución posible y sólo paquetes de productos tienen un valor real. Ahora revisamos las aplicaciones reportadas en la literatura.
@@ -100,7 +100,7 @@ En nuestro caso, se anima a las empresas participantes en la subasta JUNAEB para
 
 Si ofrecen un precio barato para cada TU individual, pensando que van a adjudicar todo el conjunto, pueden perder dinero si se juzgan sólo uno. Sin embargo, si ofrecen precios más altos para cada TU, consistente con la adjudicación de una sola, sus posibilidades de ganar varias ofertas disminuyen.
 
-####3 El proceso de subasta
+####3. El proceso de subasta
 
 El sistema educativo de Chile se compone de más de 14.000 escuelas agrupadas en 90 unidades de formación, que convertierten una caída menor de 13 regiones administrativas del país (ver Fig. 1). Cada año, la JUNAEB,
 Subasta JUNJI e INTEGRA los servicios de alimentación para 30 unidades de formación para el período de 3 años.
@@ -179,7 +179,7 @@ Para evaluar cada oferta, se consideraron los diferentes escenarios que pueden a
 Una vez que se han evaluado las ofertas, se inicia el proceso de adjudicación. La selección de ganar ofrece el hecho por un comité de adjudicación formado por los ministerios de finanzas, salud,
 la educación y los principales ejecutivos dentro de la JUNAEB.
 
-####4 Análisis combinatorio y el modelo 
+####4. Análisis combinatorio y el modelo 
 
 La concesión tiene una duración de 3 años y puede hacer frente a diferentes escenarios. La metodología para la asignación de contratos consiste en elegir soluciones robustas, es decir, aquellos que no sólo satisfacen la técnica y restricciones financieras, sino que también se encuentran entre los mejores de todos o en la mayoría de los escenarios que pueden ocurrir durante este período. Los factores que definen diferentes escenarios son los siguientes:
 
@@ -234,11 +234,13 @@ La principal variable de decisión es `$X_j$` que es 1 si se elije la oferta `$j
 
 #####4.1 Restricciones
 
-*Ver lo demás en el paper*
+-- *Ver lo demás en el paper* --
+
+---
 
 ######*Pag13*
 
-#### 5 Solución e implementación
+#### 5. Solución e implementación
 
 El proceso de evaluación de las ofertas y la adjudicación no puede tener más de una semana, por práctica y razones legales.
 
@@ -313,7 +315,7 @@ También es importante analizar los cambios en las empresas de más de estos añ
 
 La JUNAEB ha recibido un amplio reconocimiento entre las instituciones públicas por su óptima distribución de los recursos públicos entre los pobres. De hecho, el 91% de estos beneficios van directamente a los estudiantes que viven por debajo del umbral de pobreza.
 
-####7 OR en el desarrollo
+####7. OR en el desarrollo
 
 El objetivo de la OR en el desarrollo es para ilustrar cómo la comunidad participa activamente en la solución de problemas relevantes en los países en desarrollo, sobre todo lo que la gestión de lo público y las instituciones privadas más eficientes. Una gestión científica y eficaz de nuestras instituciones es nuestra manera de mejorar la calidad de vida de las personas.
 
